@@ -1,0 +1,13 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : pas de virgule entre les declarations de variables
+//
+// Resultats:
+//    Ligne 12: erreur de syntaxe, ';' attendu
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    int i j;
+}

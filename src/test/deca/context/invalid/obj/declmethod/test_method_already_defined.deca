@@ -1,0 +1,15 @@
+// Description:
+//    declaration d'une methode deja definie
+//
+// Resultats:
+//   methode deja définie
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    void a(){
+    }
+    int a(){
+    }
+}

@@ -1,0 +1,112 @@
+// Description:
+//    test de la creation et de l'utilisation de classes avec heritage
+//
+// Resultats:
+//6
+//6
+//3
+//10
+//24
+//4
+// Historique:
+//  Cree le 12/01/2024
+
+
+class Test{
+    int a;
+    int b;
+    int c;
+
+    void Test(int a, int b, int c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    int sum(){
+        return a + b + c;
+    }
+
+    int product(){
+        return a * b * c;
+    }
+
+    int max(){
+        int max = a;
+        if(b > max){
+            max = b;
+        }
+        if(c > max){
+            max = c;
+        }
+        return max;
+    }
+
+    int isGreaterThan(int x){
+        if(x > this.c){
+            return x;
+        }
+        else{
+            return 0;
+        }
+    }
+}
+
+class TestSon extends Test{
+    int d;
+
+    void TestSon(int a, int b, int c, int d){
+        this.Test(a, b, c);
+        this.d = d;
+    }
+
+    int sum(){
+        return this.sum() + d;
+    }
+
+    int product(){
+        return this.product() * d;
+    }
+
+    int max(){
+        int max = this.max();
+        if(d > max){
+            max = d;
+        }
+        return max;
+    }
+
+    int isGreaterThan(int x){
+        if(x > this.d){
+            return x;
+        }
+        else{
+            return 0;
+        }
+    }
+}
+    
+{
+    Test t = new Test();
+    TestSon ts = new TestSon();
+
+    int x;
+    t.Test(1, 2, 3);
+    println("sum = ");
+    println(t.sum());
+    println("product = ");
+    println(t.product());
+    println("max = ");
+    println(t.max());
+    x = t.isGreaterThan(1);
+
+
+    ts.TestSon(1, 2, 3, 4);
+    println("sum = ");
+    println(ts.sum());
+    println("product = ");
+    println(ts.product());
+    println("max = ");
+    println(ts.max());
+    x = ts.isGreaterThan(1);
+}

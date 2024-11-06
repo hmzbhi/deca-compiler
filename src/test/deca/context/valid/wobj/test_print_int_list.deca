@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste utilisant print d'une liste d'expressions .
+//
+// Resultats:
+//    affichage de 12 puis 13
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        print(12, 13.0);
+}

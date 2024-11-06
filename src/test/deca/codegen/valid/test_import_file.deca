@@ -1,0 +1,10 @@
+// Description:
+//    test d'importation de fichiers
+//
+// Resultats:
+//
+// Historique:
+//    cree le 12/01/2024
+
+
+#include "test_find_imported.deca"

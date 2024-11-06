@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   left-hand side of assignment is not an lvalue
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    protected int a;
+    void f(int a) {
+        int b;
+        this = a;
+    }
+}

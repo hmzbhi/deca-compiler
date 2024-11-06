@@ -1,0 +1,13 @@
+// Description:
+//    Programme minimaliste ecrivant une chaine de caracteres sur 2 lignes
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2024
+
+#include "test_affect_simple_float.deca"
+
+{
+        int a;
+}

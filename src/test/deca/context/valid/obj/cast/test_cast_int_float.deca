@@ -1,0 +1,23 @@
+// Description:
+//    Test cast int to float and float to int
+//
+// Resultats:
+//   
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A {
+    int a;
+    float b;
+
+    int getB() {
+        int x = (int) (b);
+        return x;
+    }
+
+    float getA() {
+        float x = (float) (a);
+        return x;
+    }
+}

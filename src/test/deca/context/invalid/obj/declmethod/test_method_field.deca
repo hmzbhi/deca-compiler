@@ -1,0 +1,16 @@
+// Description:
+//    declaration d'un attribut avec le meme nom qu'une methode dans la classe mere
+//
+// Resultats:
+//   attribut déjà définie dans la classe mère en tant que methode
+//
+// Historique:
+//    cree le 01/01/2024
+
+class B{
+    int a ;
+}
+class A extends B{
+    int a (){
+    }
+}

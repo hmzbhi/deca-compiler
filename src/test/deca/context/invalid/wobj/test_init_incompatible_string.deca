@@ -1,0 +1,12 @@
+// Description:
+//    Initialization
+//
+// Resultats:
+//   ligne 11 : les deux types ne sont pas compatibles
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   string s = true ;
+}

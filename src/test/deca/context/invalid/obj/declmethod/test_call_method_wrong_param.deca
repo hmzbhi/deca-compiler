@@ -1,0 +1,21 @@
+// Description:
+//    appel d'une méthode avec un paramètre en trop
+//
+// Resultats:
+//   Verifiez le nombre de parametre de la fonctions printA
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    int a;
+    void printA(int a){
+        print(a);
+    }
+}
+
+{
+    A a;
+    a = new A();
+    a.printA(1, 2);
+}

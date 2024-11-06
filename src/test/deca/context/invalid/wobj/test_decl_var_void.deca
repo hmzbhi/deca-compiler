@@ -1,0 +1,12 @@
+// Description:
+//    Declaration
+//
+// Resultats:
+//    Ligne 11: Vous ne pouvez pas declarer une variable de type Void
+// 
+// Historique:
+//    cree le 01/01/2024
+
+{
+   void a ;
+}

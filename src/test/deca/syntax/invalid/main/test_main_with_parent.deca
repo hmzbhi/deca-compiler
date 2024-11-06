@@ -1,0 +1,13 @@
+// Description:
+//    tests de programme avec des erreurs synthaxiques : () au lieu de {}
+//
+// Resultats:
+//    Ligne 11: no viable alternative at input '('
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+(
+
+)

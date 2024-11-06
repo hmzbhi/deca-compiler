@@ -1,0 +1,13 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : pas de point-virgule
+//
+// Resultats:
+//    Ligne 12: erreur de syntaxe : no viable alternative at input }
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    int i = 0
+}

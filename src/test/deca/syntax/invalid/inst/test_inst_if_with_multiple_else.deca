@@ -1,0 +1,25 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : 2 else
+//
+// Resultats:
+//    Ligne 16 : mismatched input 'else' expecting {'instanceof', '<', '>', '=', '+', '-', '*', '/', '%', '.', ';', '==', '!=', '>=', '<=', '&&', '||'}
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        if (i < 10){
+                println("Hello World!");
+                i = i + 1;
+        }else{
+                println("premier else");
+                i = i + 1;
+        }else{
+                println("deuxieme else");
+                i = i + 1;
+        }
+                
+        
+}

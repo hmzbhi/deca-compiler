@@ -1,0 +1,17 @@
+// Description:
+//    tests de l'instruction while
+//
+// Resultats:
+//
+// Historique:
+// cree le 12/01/2024
+{
+    int i = 1;
+    int j = 0;
+
+    while (i < 10) {
+        j = j + i;
+        i = i + 1;
+    }
+}
+

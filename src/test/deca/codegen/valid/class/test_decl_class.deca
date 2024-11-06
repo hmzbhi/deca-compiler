@@ -1,0 +1,25 @@
+// Description:
+//    test de la creation d'une classe et de l'heritage
+//
+// Resultats:
+//
+// Historique:
+//  Cree le 12/01/2024
+
+class B
+{
+    protected int a;
+    int b;
+    void f()
+    {
+    }
+}
+
+class A extends B
+{
+    int c;
+}
+
+{
+    A a;
+}

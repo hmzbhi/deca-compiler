@@ -1,0 +1,11 @@
+// Description:
+//    division 0.0 float
+//
+// Resultats:
+//   Error: Overflow during float arithmetic operation or Float division by zero
+//
+// Historique:
+//    cree le 15/01/2024
+{
+    float x = 1.0 / 0.0;
+}

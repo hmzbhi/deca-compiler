@@ -1,0 +1,13 @@
+// Description:
+//    operation not fail
+//
+// Resultats:
+//    ligne 11 : Le type attendu apres not est boolean
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   string state = "true" ;
+   boolean state1 = (!state);
+}

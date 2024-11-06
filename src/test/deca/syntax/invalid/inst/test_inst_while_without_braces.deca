@@ -1,0 +1,17 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : boucle while sans {}
+//
+// Resultats:
+//    Ligne 16: missing '{' at 'println'
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        while (i < 10)
+                println("Hello World!");
+                i = i + 1;
+        
+}

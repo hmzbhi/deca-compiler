@@ -1,0 +1,13 @@
+// Description:
+//    operation unaryMinus fail
+//
+// Resultats:
+//    ligne 11 : “Le type attendu apres unaryMinus est int ou float
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   string x = "deux" ;
+   int y = -x;
+}

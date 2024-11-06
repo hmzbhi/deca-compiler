@@ -1,0 +1,19 @@
+// Description:
+//    tests de l'instruction if then else avec des flottants
+//
+// Resultats:
+//
+// Historique:
+//  Cree le 14/01/2024
+
+{
+    float a = 1.0;
+    float b = 2.0;
+    
+    if(a > b) {
+        println("a && b = true");
+    } else {
+        println("a && b = false");
+    }
+}
+

@@ -1,0 +1,13 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    int a;
+    protected int b;
+    protected int c, d;
+}

@@ -1,0 +1,35 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   no viable alternative at input '}'
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    void k(int a) {
+        this.f(a);
+    }
+    void f(int a) {
+        print(a);
+    }
+}
+
+class B extends A {
+    void f(int a) {
+        print(a);
+    }
+}
+
+{
+    A a;
+    B b;
+    a = new A();
+    b = new B();
+    if (a (instanceof B)) {
+        print(1);
+    } else {
+        print(0);
+    }
+    
+}

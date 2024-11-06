@@ -1,0 +1,11 @@
+// Description:
+//    Initialisation d'une variable de type boolean
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   boolean state = true ;
+}

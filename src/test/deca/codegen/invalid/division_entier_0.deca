@@ -1,0 +1,11 @@
+// Description:
+//    Utilisation simple de la classe Math
+//
+// Resultats:
+//    Error: Division by zero
+//
+// Historique:
+//    cree le 15/01/2024
+{
+    int x = 2/0;
+}

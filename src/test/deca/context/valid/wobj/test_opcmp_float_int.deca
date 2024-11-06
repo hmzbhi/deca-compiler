@@ -1,0 +1,12 @@
+// Description:
+//    operation de comparaison reussi
+//
+// Resultats:
+//    state = false
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   boolean state = (42.0 <= 24) ;
+}

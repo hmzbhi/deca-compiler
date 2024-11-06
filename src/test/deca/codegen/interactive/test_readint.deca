@@ -1,0 +1,16 @@
+// Description:
+//    tests de la lecture d'entiers
+//
+// Resultats:
+//    437
+// Historique:
+//  Cree le 14/01/2024
+{
+    int i = 437;
+    int j = readInt();
+    int k;
+    println("Ecrivez un entier entre 0 et 1000 : ");
+    k = readInt();
+    println(i - j + k);
+}
+

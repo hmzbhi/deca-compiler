@@ -1,0 +1,18 @@
+// Description:
+//    declaration d'une methode avec le meme nom qu'un field
+//
+// Resultats:
+//   methode déjà définie dans la classe mère en tant que field
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    int a;
+}
+
+class B extends A{
+    int a(){
+        return 0;
+    }
+}

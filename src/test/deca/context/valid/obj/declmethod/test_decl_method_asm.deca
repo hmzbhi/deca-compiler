@@ -1,0 +1,19 @@
+// Description:
+//    declaration d'une methode en assembleur
+//
+// Resultats:
+//   methode deja définie
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    void a()
+        asm("
+            CLK
+            INT R1, R1
+            REM #4, R1
+            ADD #1, R1
+            LOAD R1, R0    
+        ");
+}

@@ -1,0 +1,25 @@
+// Description:
+//    test de programme syntaxiquement correct
+//
+// Resultats:
+//    Hello World!
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        if (i < 10){
+                println("Hello World!");
+                i = i + 1;
+        }else if (i < 20){
+                println("else if");
+                i = i + 1;
+        }else{
+                println("deuxieme else");
+                i = i + 1;
+        }
+                
+        
+}

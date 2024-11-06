@@ -1,0 +1,14 @@
+// Description:
+//    tests de l'instruction and (et logique)
+//
+// Resultats:
+//
+// Historique:
+//  Cree le 14/01/2024
+
+{
+    boolean a = true;
+    boolean b = false;
+    boolean c = a && b;
+}
+

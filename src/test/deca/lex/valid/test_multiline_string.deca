@@ -1,0 +1,12 @@
+/ Description:
+//    Programme minimaliste declarant une chaine de caracteres sur plusieurs lignes
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        String s = "Hello World
+        Ccoucou";
+}

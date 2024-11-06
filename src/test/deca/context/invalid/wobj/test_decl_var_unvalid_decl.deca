@@ -1,0 +1,12 @@
+// Description:
+//    Affectation et typage
+//
+// Resultats:
+//    Ligne 11: identifiant introuvable.
+// 
+// Historique:
+//    cree le 01/01/2024
+
+{
+   int x =  deux;
+}

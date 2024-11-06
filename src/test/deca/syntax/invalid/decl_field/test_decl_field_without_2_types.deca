@@ -1,0 +1,11 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//  extraneous input 'a' expecting ';'
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    protected int int a ;
+}

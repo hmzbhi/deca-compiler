@@ -1,0 +1,11 @@
+// Description:
+//   test print unaire int
+//
+// Resultats:
+//   -4
+//
+// Historique:
+//  Cree le 15/01/2024
+{
+    print(-4);
+}

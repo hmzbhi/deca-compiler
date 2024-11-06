@@ -1,0 +1,14 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   extraneous input '=' expecting IDENT
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    protected int a;
+    void f(int a) {
+        this. = a;
+    }
+}

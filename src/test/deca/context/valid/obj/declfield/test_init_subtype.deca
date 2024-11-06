@@ -1,0 +1,28 @@
+// Description:
+//    initialisation compatible car A soustype de B et pas l'inverse
+//
+// Resultats:
+//  soustypage et initialisation reussis
+//
+// Historique:
+//    cree le 01/01/2024
+
+
+
+class A {
+    int x;
+}
+class B extends A{
+    boolean x;
+    void test(A a){
+
+    //A a ;
+    a.x = 1;
+    }
+}
+class C {
+    B b;
+    A a = b ;
+
+
+}

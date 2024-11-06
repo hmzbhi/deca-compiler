@@ -1,0 +1,12 @@
+// Description:
+//    Declaration
+//
+// Resultats:
+//    Ligne 11: un ou deux des operandes n'est pas de type boolean
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   boolean state = true || 1 ;
+}

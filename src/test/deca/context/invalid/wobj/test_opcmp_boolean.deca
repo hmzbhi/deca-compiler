@@ -1,0 +1,12 @@
+// Description:
+//    operation de comparaison echec
+//
+// Resultats:
+//    Ligne 11: operation de comparaison impossible avec ces types
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   boolean state = (1.0 == true) ;
+}

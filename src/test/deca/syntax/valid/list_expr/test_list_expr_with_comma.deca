@@ -1,0 +1,13 @@
+// Description:
+//    tests de programme syntaxiquement corrects
+//
+// Resultats:
+//    Hello World!
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    println("Hello World", "!");
+}

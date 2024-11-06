@@ -1,0 +1,12 @@
+// Description:
+//    Declaration
+//
+// Resultats:
+//    Ligne 11: operation arithmetique impossible avec ces deux types
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   int a = 1 + true ;
+}

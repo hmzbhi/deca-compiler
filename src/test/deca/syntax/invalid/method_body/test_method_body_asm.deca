@@ -1,0 +1,11 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   no viable alternative at input 'voidprint'
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    void print(int a) asm(aze);
+}

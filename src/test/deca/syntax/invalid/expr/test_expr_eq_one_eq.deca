@@ -1,0 +1,15 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : eq avec 3 =
+//
+// Resultats:
+// extraneous input '=' expecting {'false', 'new', 'null', 'readInt', 'readFloat', 'this', 'true', IDENT, '-', '(', '!', INT, FLOAT, STRING}//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    int a = 2;
+    if(a === 0){
+        a = 2;
+    }
+}

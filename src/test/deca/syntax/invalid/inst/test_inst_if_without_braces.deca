@@ -1,0 +1,17 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : if sans crochet
+//
+// Resultats:
+//    Ligne 13: missing '{' at 'println'
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        if (i < 10)
+                println("Hello World!");
+                i = i + 1;
+        
+}

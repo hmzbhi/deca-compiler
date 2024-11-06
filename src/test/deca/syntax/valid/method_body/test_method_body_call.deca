@@ -1,0 +1,38 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   1
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    void printA(int a) {
+        this.f(a);
+    }
+    void f(int a) {
+        print(a);
+    }
+}
+
+class B extends A {
+    void f(int a) {
+        print(a+1);
+    }
+}
+
+{
+    A a;
+    B b;
+    a = new A();
+    a.printA(1);
+
+    b = (B) (a);
+
+    if(b instanceof B) {
+        print("b est une instance de B");
+    } else {
+        print("b n'est pas une instance de B");
+    }
+
+}

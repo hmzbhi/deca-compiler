@@ -1,0 +1,16 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : eq avec un seul ! au lieu de !=
+//
+// Resultats:
+//    Ligne 13: no viable alternative at input '!'
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    int a = 2;
+    if(a ! 0){
+        a = 4;
+    }
+}

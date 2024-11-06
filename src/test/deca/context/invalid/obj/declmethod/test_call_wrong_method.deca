@@ -1,0 +1,19 @@
+// Description:
+//    appel d'une méthode qui n'existe pas
+//
+// Resultats:
+//   
+// Methode printA non définie dans la classe A
+
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    int a;
+}
+
+{
+    A a;
+    a = new A();
+    a.printA();
+}

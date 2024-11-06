@@ -1,0 +1,15 @@
+// Description:
+//    programme avec condition.
+//
+// Resultats:
+//    valid
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+boolean state = true;
+if(state){
+    print("valid");
+}
+}

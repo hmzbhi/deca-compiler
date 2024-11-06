@@ -1,0 +1,12 @@
+// Description:
+//    Programme minimaliste affectant la valeur 1 a une variable
+//
+// Resultats:
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int a;
+        a = 1;
+}

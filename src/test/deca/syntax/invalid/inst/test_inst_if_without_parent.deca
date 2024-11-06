@@ -1,0 +1,18 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : if sans parenthese
+//
+// Resultats:
+//    Ligne 13: mismatched input '{' expecting '('
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        if {
+                println("Hello World!");
+                i = i + 1;
+        }
+        
+}

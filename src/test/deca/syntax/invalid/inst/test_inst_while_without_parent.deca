@@ -1,0 +1,18 @@
+// Description:
+//    tests de programme syntaxiquement incorrects : boucle while sans parenthese
+//
+// Resultats:
+//    Ligne 13: mismatched input '{' expecting '('
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i = 0;
+        while {
+                println("Hello World!");
+                i = i + 1;
+        }
+        
+}

@@ -1,0 +1,14 @@
+// Description:
+//    declaration d'une methode renvoyant un type incorrect
+//
+// Resultats:
+//   Parametre deja utilisée
+//
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    void  m(float x, boolean x){
+    }
+   }
+

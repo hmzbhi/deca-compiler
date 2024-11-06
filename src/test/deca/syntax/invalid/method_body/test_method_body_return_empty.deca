@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//  mismatched input ';' expecting {'false', 'new', 'null', 'readInt', 'readFloat', 'this', 'true', IDENT, '-', '(', '!', INT, FLOAT, STRING}
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    void f(int a) {
+        int b;
+        b = a + 1;
+        return;
+    }
+}

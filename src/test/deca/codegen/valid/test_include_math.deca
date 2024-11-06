@@ -1,0 +1,114 @@
+// Description:
+//    test de l'utilisation de la classe Math en mode imperatif
+//
+// Resultats:
+//
+// Historique:
+//  Cree le 12/01/2024
+
+
+
+    
+{
+    float pi = 3.1415927410125732421875; 
+    float f = pi/2;
+    float ulp;
+    float res = 0.0;
+    float x = 1.0;
+    int i = 0;
+    float fact = 1.0;
+    float pow = 1.0;
+    float sign = -1.0; 
+    float pow32;
+    float fpow32 = f;
+    float pow2 = 1.0;
+    float pow23 = 1.0;
+    float i_for_fact;
+    float absx = 1.0;
+
+    int NB_CALC = 0;
+    
+    while(NB_CALC < 10){
+        pow = 1.0;
+        fact = 1.0;
+        sign = -1.0;
+        i_for_fact = 0.0;
+        absx = 1.0;
+        res = 0.0;
+        x = 1.0;
+        i = 0;
+        pow2 = 1.0;
+        pow23 = 1.0;
+        f = 4.0 * pi / (NB_CALC + 1.0);
+
+        pow32 = 4.0 * pi / (NB_CALC + 1.0);
+    
+        // RECENTRAGE ENTRE -PI ET PI
+        while(f > pi){
+            f = f - 2*pi;
+        }
+        while(f < -pi){
+            f = f + 2*pi;
+        }
+        if(f < 0){
+            f = -f;
+        }
+
+        // CALCUL DE ULP
+
+        pow32 = 0.0;
+        if (fpow32 < 0) {
+            fpow32 = -fpow32;
+        }
+        while (fpow32 < 1) {
+            fpow32 = fpow32 * 2.0;
+            pow32 = pow32 - 1;
+        }
+        while (fpow32 >= 2) {
+            fpow32 = fpow32 / 2.0;
+            pow32 = pow32 + 1;
+        }
+        pow2 = 1.0;
+        while(pow32 > 0){
+            pow2 = pow2 * 2.0;
+            pow32 = pow32 - 1;
+        }
+        i = 0;
+        while(i<23){
+            pow23 = pow23 / 2.0;
+            i = i + 1;
+        }
+
+        ulp = pow2 * pow23;
+
+        // FIN ULP
+
+        // CALCUL DE COSINUS EN SERIE ENTIERE
+        i = 0;
+
+        while (absx > ulp) {
+            pow = pow * f * f;
+            if(i == 0){
+                pow = 1.0;
+            }
+            fact = fact * (2.0 * i - 1.0) * 2.0 * i;
+            if(i == 0){
+                fact = 1.0;
+            }
+            if(i == 1){
+                fact = 2.0;
+            }
+            sign = sign * -1.0;
+            x = sign * (pow * f) / (fact * (2.0 * i + 1.0));
+            res = res + x;
+            i = i + 1;
+            absx = 0.0 +x;
+            if (absx < 0.0) {
+                absx = -absx;
+            }
+        }
+        println(res);
+
+        NB_CALC = NB_CALC + 1;
+    }
+}

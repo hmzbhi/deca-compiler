@@ -1,0 +1,32 @@
+// Description:
+//   test or
+//
+// Resultats:
+//   2.0
+//
+// Historique:
+//  Cree le 15/01/2024
+{
+    boolean a = true;
+    boolean b = false;
+    boolean c = true;
+
+    if(a || (b && c)){
+        print("1.0");
+    }
+    else{
+        print("2.0");
+    }
+    if(a || c){
+        print("3.0");
+    }
+    else{
+        print("4.0");
+    }
+    if((a && b) || b){
+        print("3.0");
+    }
+    else{
+        print("4.0");
+    }
+}

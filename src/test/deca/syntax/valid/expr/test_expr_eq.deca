@@ -1,0 +1,15 @@
+// Description:
+//    test de programme syntaxiquement correct
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+    int a = 2;
+    if(a == 0){
+        a = 2;
+    }
+}

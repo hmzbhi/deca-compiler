@@ -1,0 +1,19 @@
+// Description:
+//    test de l'inclusion de la classe Math
+//
+// Resultats:
+//
+// Historique:
+//  Cree le 12/01/2024
+
+
+
+#include "Math.decah"
+    
+{
+    Math math = new Math();
+
+    float cos3 = math.cos(3);
+
+    print(cos3);
+}

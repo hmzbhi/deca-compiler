@@ -1,0 +1,13 @@
+// Description:
+//    Programme minimaliste affectant une valeur floatante finie
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        float a;
+        a = 10.0e+10;
+}

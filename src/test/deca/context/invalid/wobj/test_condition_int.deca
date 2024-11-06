@@ -1,0 +1,15 @@
+// Description:
+//    programme avec if.
+//
+// Resultats:
+//    ligne 12 : Votre condition doit etre de type boolean
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+int x = 2;
+if(x){
+    print("valid");
+}
+}

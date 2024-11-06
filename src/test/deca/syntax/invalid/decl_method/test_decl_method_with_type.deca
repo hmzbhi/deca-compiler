@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+// mismatched input '(' expecting {'=', ',', ';'}
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    int a;
+
+    protected int setA (int a) {
+        this.a = a;
+    }
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//   1
+// Historique:
+//    cree le 01/01/2024
+
+class B {
+   void f() asm("nop");
+
+    void g() asm("
+    nop
+    nop");
+}

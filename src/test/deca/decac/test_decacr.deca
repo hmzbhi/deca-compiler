@@ -1,0 +1,12 @@
+// Description:
+//    Programme utilisé pour tester la limitation du nombre de registres de decac
+//
+// Resultats:
+// POP d'un registre
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int x = 1 + (2 + (3 + (4+5)));
+}

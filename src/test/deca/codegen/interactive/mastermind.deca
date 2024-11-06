@@ -1,0 +1,237 @@
+//jeu de mastermind interactif
+
+#include "Math.decah"
+
+class CheckList{
+    protected boolean item1;
+    protected boolean item2;
+    protected boolean item3;
+    protected boolean item4;
+
+    void setItem(boolean item, int index) {
+        if (index < 1 || index > 4) {
+            println("Erreur : index invalide");
+        }
+        if (index == 1) {
+            item1 = item;
+        } else if (index == 2) {
+            item2 = item;
+        } else if (index == 3) {
+            item3 = item;
+        } else if (index == 4) {
+            item4 = item;
+        }
+    }
+
+    boolean getItem(int index) {
+        if (index == 1) {
+            return item1;
+        } else if (index == 2) {
+            return item2;
+        } else if (index == 3) {
+            return item3;
+        } else if (index == 4) {
+            return item4;
+        } else {
+            println("Erreur : index invalide");
+            return false;
+        }
+    }
+}
+
+class ColorList{
+    protected int item1;
+    protected int item2;
+    protected int item3;
+    protected int item4;
+
+    int setItem(int item, int index) {
+        if (item < 1 || item > 4) {
+            println("Erreur : couleur invalide");
+            return 1;
+        }
+        if (index < 1 || index > 4) {
+            println("Erreur : index invalide");
+            return 1;
+        }
+        if (index == 1) {
+            item1 = item;
+        } else if (index == 2) {
+            item2 = item;
+        } else if (index == 3) {
+            item3 = item;
+        } else if (index == 4) {
+            item4 = item;
+        }
+        return 0;
+    }
+
+    int getItem(int index) {
+        if (index == 1) {
+            return item1;
+        } else if (index == 2) {
+            return item2;
+        } else if (index == 3) {
+            return item3;
+        } else if (index == 4) {
+            return item4;
+        } else {
+            println("Erreur : index invalide");
+            return -1;
+        }
+    }
+
+    void printColor(int color) {
+        if (color == 0) {
+            println("R");
+        } else if (color == 1) {
+            println("B");
+        } else if (color == 2) {
+            println("J");
+        } else if (color == 3) {
+            println("V");
+        } else if (color == 4) {
+            println("N");
+        } else if (color == 5) {
+            println("M");
+        }
+    }
+
+    void printList() {
+        printColor(item1);
+        printColor(item2);
+        printColor(item3);
+        printColor(item4);
+    }
+
+    boolean equalsList(ColorList list) {
+        int i = 1;
+        while (i <= 4) {
+            if (list.getItem(i) != this.getItem(i)) {
+                return false;
+            }
+            i = i + 1;
+        }
+        return true;
+    }
+
+    int contains(int item) {
+        int i = 1;
+        while (i <= 4) {
+            if (this.getItem(i) == item) {
+                return i + 1;
+            }
+            i = i + 1;
+        }
+        return -1;
+    }
+
+}
+
+class Mastermind
+{
+    ColorList proposition = new ColorList();
+    ColorList solution = new ColorList();
+    int nbEssais = 0;
+
+    void initSolution()
+    {
+        int color; 
+        int i = 1;
+        while(i <= 4)
+        {
+            color = Math.getRandomNumber();
+            solution.setItem(color, i);
+            i = i + 1;
+        }
+    }
+
+    void initProposition()
+    {
+        int color;
+        int i = 1;
+        println("Entrez votre proposition : ");
+        while(i <= 4)
+        {
+            color = readInt();
+            proposition.setItem(color, i);
+            i = i + 1;
+        }
+    }
+
+    void printSolution()
+    {
+        solution.printList();
+    }
+
+    void printProposition()
+    {
+        proposition.printList();
+    }
+
+    void printResult() {
+        int i = 1;
+        int j = 1;
+        int nbBienPlace = 0;
+        int nbMalPlace = 0;
+        int colorProposition;
+        int colorSolution;
+        CheckList correctPosition = new CheckList();
+        CheckList correctDigit = new CheckList();
+
+        // Check for correct position and digit
+        while (i <= 4) {
+            if (proposition.getItem(i) == solution.getItem(i)) {
+                nbBienPlace = nbBienPlace + 1;
+                correctPosition.setItem(true, i);
+                correctDigit.setItem(true, i);
+            }
+            i = i + 1;
+        }
+        i = 1;
+        while (i <= 4) {
+            if (!correctPosition.getItem(i)) {
+                j = 1;
+                while (j <= 4) {
+                    if (!correctDigit.getItem(j) && proposition.getItem(i) == solution.getItem(j)) {
+                        nbMalPlace = nbMalPlace + 1;
+                        correctDigit.setItem(true, j);
+                        j = 5;
+                    }
+                    j = j + 1;
+                }
+            }
+            i = i + 1;
+        }
+
+        println("Nombre de couleurs bien placees : " + nbBienPlace);
+        println("Nombre de couleurs mal placees : " + nbMalPlace);
+    }
+
+    boolean isWin() {
+        if (proposition.equalsList(solution)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    int play() {
+        initSolution();
+        while (nbEssais < 10) {
+            initProposition();
+            if (isWin()) {
+                println("Vous avez gagne !");
+                return 1;
+            }
+            nbEssais = nbEssais + 1;
+        }
+        println("Vous avez perdu !");
+        return 0;
+    }
+}
+
+{
+    Mastermind mastermind;
+    mastermind.play();
+}

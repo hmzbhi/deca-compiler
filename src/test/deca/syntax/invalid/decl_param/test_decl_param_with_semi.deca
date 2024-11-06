@@ -1,0 +1,13 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+// mismatched input ';' expecting {',', ')'}
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    void f(int a; int b) {
+        print("a = " + a + " b = " + b);
+    }
+}

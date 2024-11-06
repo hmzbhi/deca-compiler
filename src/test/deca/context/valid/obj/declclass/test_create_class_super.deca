@@ -1,0 +1,15 @@
+// Description:
+//    Create a class A that inherits from B
+//
+// Resultats:
+//
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class B{
+
+}
+
+class A extends B {
+}

@@ -1,0 +1,13 @@
+// Description:
+//    tests de la soustraction d'entiers
+//
+// Resultats:
+//
+// Historique:
+// cree le 12/01/2024
+{
+    int i = 1;
+    int j;
+    j = i - 1;
+}
+

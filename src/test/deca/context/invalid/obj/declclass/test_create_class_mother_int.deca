@@ -1,0 +1,11 @@
+// Description:
+//    Create a class with a mother that is a type
+//
+// Resultats:
+//   Vous ne pouvez pas hériter de ce que vous avez écrit
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A extends int {
+}

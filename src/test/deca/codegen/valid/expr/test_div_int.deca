@@ -1,0 +1,16 @@
+// Description:
+//    tests de division d'entiers
+//
+// Resultats:
+//    2
+//
+// Historique:
+//  Cree le 14/01/2024
+
+{
+    int i = 10;
+    int j;
+    j = i / 5;
+    println(j);
+}
+

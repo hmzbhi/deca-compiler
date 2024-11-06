@@ -1,0 +1,19 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class B {
+    int B() {       
+    }
+}
+
+class A extends B {
+    int A() {
+        
+    }
+}
+

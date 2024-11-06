@@ -1,0 +1,11 @@
+// Description:
+//    Modulo 0 chez les entiers
+//
+// Resultats:
+//    Error: Integer modulo by zero
+//
+// Historique:
+//    cree le 15/01/2024
+{
+    int x = 2%0;
+}

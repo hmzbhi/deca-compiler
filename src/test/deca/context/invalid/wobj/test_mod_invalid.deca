@@ -1,0 +1,12 @@
+// Description:
+//    operation mod fail
+//
+// Resultats:
+//    ligne 11 : le type des deux operandes doit etre int pour l’operation mod
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   int x = 42.0 % 2 ;
+}

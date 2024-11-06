@@ -1,0 +1,217 @@
+{
+    int nbMaxEssais = 10;
+    int nbEssais = 0;
+    int proposition;
+    boolean lettre1 = false;
+    boolean lettre2 = false;
+    boolean lettre3 = false;
+    boolean lettre4 = false;
+    boolean lettre5 = false;
+
+    println("--------------------------------------------------------------------------------------------------------");
+    println("");
+    println("                                               JEU DU PENDU");
+    println("");
+    println("--------------------------------------------------------------------------------------------------------");
+    println("");
+    println("Pour choisir une lettre, vous devez taper le numéro qui lui correspond selon le tableau ci-dessous:");
+    println("");
+    println("|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |"); 
+    println("|  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |");
+    println("");
+    println("|  N  |  O  |  P  |  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |");
+    println("|  14 |  15 |  16 |  17 |  18 |  19 |  20 |  21 |  22 |  23 |  24 |  25 |  26 |");
+    println("");
+    println("Pour trouver le mot, vous avez le droit à ", nbMaxEssais, " essais.");
+    println("");
+    println("Le mot à trouver est:");
+    println("");
+    while (nbEssais < nbMaxEssais) {
+        if (lettre1 == false) {
+            print("__ ");
+        } else {
+            print("L ");
+        }
+        if (lettre2 == false) {
+            print("__ ");
+        } else {
+            print("I ");
+        }
+        if (lettre3 == false) {
+            print("__ ");
+        } else {
+            print("N ");
+        }
+        if (lettre4 == false) {
+            print("__ ");
+        } else {
+            print("U ");
+        }
+        if (lettre5 == false) {
+            print("__ ");
+        } else {
+            print("X ");
+        }
+        println("");
+        println("Quelle lettre voulez-vous proposer?");
+        proposition = readInt();
+        if (proposition == 1) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 2) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 3) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 4) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 5) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 6) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 7) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 8) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 9) {
+            if (lettre2 == true){
+                println("Vous avez déjà proposé cette lettre.");
+                nbEssais = nbEssais + 1;
+            } else {
+                lettre2 = true;
+                println("Bon choix!");
+            }
+        } else if (proposition == 10) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 11) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 12) {
+            if (lettre1 == true){
+                println("Vous avez déjà proposé cette lettre.");
+                nbEssais = nbEssais + 1;
+            } else {
+                lettre1 = true;
+                println("Bon choix!");
+            }
+        } else if (proposition == 13) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 14) {
+            if (lettre3 == true){
+                println("Vous avez déjà proposé cette lettre.");
+                nbEssais = nbEssais + 1;
+            } else {
+                lettre3 = true;
+                println("Bon choix!");
+            }
+        } else if (proposition == 15) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 16) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 17) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 18) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 19) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 20) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 21) {
+            if (lettre4 == true){
+                println("Vous avez déjà proposé cette lettre.");
+                nbEssais = nbEssais + 1;
+            } else {
+                lettre4 = true;
+                println("Bon choix!");
+            }
+        } else if (proposition == 22) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 23) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 24) {
+            if (lettre5 == true){
+                println("Vous avez déjà proposé cette lettre.");
+                nbEssais = nbEssais + 1;
+            } else {
+                lettre5 = true;
+                println("Bon choix!");
+            }
+        } else if (proposition == 25) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else if (proposition == 26) {
+            println("Mauvais choix!");
+            nbEssais = nbEssais + 1;
+        } else {
+            while (proposition < 1 || proposition > 26) {
+                println("Vous devez choisir un nombre entre 1 et 26.");
+                proposition = readInt();
+            }
+        }
+        if (lettre1) {
+            if(lettre2) {
+                if(lettre3) {
+                    if(lettre4) {
+                        if(lettre5) {
+                            nbEssais = nbMaxEssais;
+                            println("Vous avez trouvé le mot!");
+                        } else {
+                            println("Il vous reste ", (nbMaxEssais - nbEssais), " essais.");
+                            println("");
+                        }
+                    } else {
+                        println("Il vous reste ", (nbMaxEssais - nbEssais), " essais.");
+                        println("");
+                    }
+                } else {
+                    println("Il vous reste ", (nbMaxEssais - nbEssais), " essais.");
+                    println("");
+                }
+            } else {
+                println("Il vous reste ", (nbMaxEssais - nbEssais), " essais.");
+                println("");
+            }
+        } else {
+            println("Il vous reste ", (nbMaxEssais - nbEssais), " essais.");
+            println("");
+        }
+    }
+    if (lettre1) {
+        if(lettre2) {
+            if(lettre3) {
+                if(lettre4) {
+                    if(lettre5) {
+                        println("Vous avez gagné!");
+                        println("Le mot était: LINUX");
+                    } else {
+                        println("Vous avez perdu!");
+                    }
+                } else {
+                    println("Vous avez perdu!");
+                }
+            } else {
+                println("Vous avez perdu!");
+            }
+        } else {
+            println("Vous avez perdu!");
+        }
+    } else {
+        println("Vous avez perdu!");
+    }
+}

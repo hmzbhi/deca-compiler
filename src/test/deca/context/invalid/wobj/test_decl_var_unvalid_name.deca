@@ -1,0 +1,12 @@
+// Description:
+//    Affectation et typage
+//
+// Resultats:
+//    Ligne 11: Type invalide.
+// 
+// Historique:
+//    cree le 01/01/2024
+
+{
+   inat a;
+}

@@ -1,0 +1,30 @@
+// Description:
+//    declaration de méthodes avec des types de retour differents
+//
+// Resultats:
+//   
+// 
+// Historique:
+//    cree le 01/01/2024
+
+class A{
+    void a(){
+    }
+    int b(){
+    }
+    float c(){
+    }
+    boolean d(){
+    }
+
+    int test(int a, int b){
+
+    }
+}
+
+
+class B extends A{
+    int test(int a, int b){
+
+    }
+}

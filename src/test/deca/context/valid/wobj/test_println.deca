@@ -1,0 +1,14 @@
+// Description:
+//    Programme minimaliste utilisant println.
+//
+// Resultats:
+//    Hello, world, 12, puis 12,32 en retournant a la ligne a chaque fois
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        println("Hello, world!");
+        println(12);
+        println(12.34);
+}

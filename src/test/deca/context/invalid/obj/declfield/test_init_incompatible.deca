@@ -1,0 +1,14 @@
+// Description:
+//    initialisation d un int avec float
+//
+// Resultats:
+//  Ligne 13 : Les deux types ne sont pas compatibles
+//
+// Historique:
+//    cree le 01/01/2024
+
+
+
+class A {
+    int a = 5.0;
+}

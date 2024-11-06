@@ -1,0 +1,20 @@
+// Description:
+//    Programme minimaliste faisant une boucle while
+//
+// Resultats:
+//    Hello World!
+//    Hello World!
+//    Hello World!
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+        int i, j;
+        i = 0;
+        j = 0;
+        while (i < 3) {
+                println("Hello World!");
+                i = i + 1;
+        }
+}

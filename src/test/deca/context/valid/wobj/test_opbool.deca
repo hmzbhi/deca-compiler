@@ -1,0 +1,16 @@
+// Description:
+//    affectation et operation reussi a chaque instructions
+//
+// Resultats:
+//    state = true
+//
+// Historique:
+//    cree le 01/01/2024
+
+{
+   boolean state1 = true;
+   boolean state2 = false;
+
+   boolean state = state1 && state2 ;
+   state = state || state1;
+}

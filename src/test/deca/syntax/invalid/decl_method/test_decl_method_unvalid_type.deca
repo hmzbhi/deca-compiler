@@ -1,0 +1,15 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+// no viable alternative at input 'publicvoidsetA'
+// Historique:
+//    cree le 01/01/2024
+
+class A {   
+    int a;
+
+    public void setA(int a) {
+        this.a = a;
+    }
+}

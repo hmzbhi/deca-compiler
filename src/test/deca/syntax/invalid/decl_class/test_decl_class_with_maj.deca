@@ -1,0 +1,11 @@
+// Description:
+//    Programme minimaliste creant une classe
+//
+// Resultats:
+//  no viable alternative at input 'Class'
+// Historique:
+//    cree le 01/01/2024
+
+Class A {
+
+};

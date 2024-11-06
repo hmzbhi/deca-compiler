@@ -1,0 +1,31 @@
+// Description:
+//   test Convfloat
+//
+// Resultats:
+//   2.0
+//
+// Historique:
+//  Cree le 15/01/2024
+{
+    int x = 1;
+    float y = 1.0;
+    float z = x + y;
+    float w = 13.0 + x;
+    int a = -1;
+    if(z > a){
+        print(x);
+    }
+    else if(a == 0){
+        print(y);
+    }
+    else{
+        print(z);
+    }
+    if(x > y){
+        print(x);
+    }
+    else{
+        print(y);
+    }
+    print(z);
+}
